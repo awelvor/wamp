@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+   
+    <div class="container">
+
+
+
+
+
+
+<h1>Installation de Wampserver</h1>
+
+<p>AVANT de procéder à l'installation de Wampserver, vous devez vous assurez que certains éléments sont installés sur votre système,
+ sinon, Wampserver ne pourra pas fonctionner, l'installation sera défectueuse et vous devrez supprimer Wampserver AVANT d'installer les éléments qui manquaient.</p>
+<p>Les paquetages Microsoft Visual Studio VC9, VC10, VC11, VC15, VC17 et VS16 sont impérativement requis pour Wampserver 3 même si vous n'utilisez que des versions Apache et PHP VC11.</p>
+<p>À la fin de ce texte, sous la rubrique --- Paquetages VC --- vous trouverez les liens de téléchargement desdits paquetages.</p>
+<p>--- N'installez pas Wampserver PAR-DESSUS une version existante, suivez les conseils de :<br>
+- Installer une nouvelle version de Wampserver :<a href=" http://forum.wampserver.com/read.php?1,119444">http://forum.wampserver.com/read.php?1,119444</a></p>
+Si vous installez Wampserver par dessus une version existante, non seulement cela ne fonctionnera pas, mais en plus vous risquez de perdre vos bases de données existantes.
+--- Installez Wampserver dans un dossier à la racine d'un disque, par exemple C:\wamp ou D:\wamp. Prenez un chemin d'installation qui ne comporte pas d'espaces ou de caractères diacritiques ; donc, pas d'installation dans c:\Program Files\ ou c:\Program Files (x86\
+Il faut, AVANT l'installation, désactiver ou fermer certaines applications :
+- Fermer Skype ou le forcer à ne pas utiliser le port 80
+Item N°04 des CONSEILS DE DÉPANNAGE de Wampserver : http://forum.wampserver.com/read.php?1,88043
+- Désactiver IIS
+Item N°08 des CONSEILS DE DÉPANNAGE de Wampserver : http://forum.wampserver.com/read.php?1,88043
+Si vous pensez ne pas être en accord avec ces prèrequis, validez Annuler pour annuler l'installation, appliquez les prérequis et relancez l'installation.
+
+Ce programme nécessite des privilèges Administrateur pour fonctionner correctement. Il sera lancé avec l'option « Exécuter en tant qu'administrateur ». Si vous ne voulez pas qu'un programme ait cette option, annulez l'installation.
+<h3>--- Paquetages VC ---</h3>
+Vérifiez que vous êtes « à jour » dans les packages redistribuables VC9, VC10, VC11, VC13 et VC14
+Même si vous pensez être à jour, installez en tant qu'administrateur et si message "Déjà installé", validez Réparer.
+-- VC9 Paquetages (Visual Studio 2008 SP1)
+http://www.microsoft.com/fr-fr/download/details.aspx?id=5582
+http://www.microsoft.com/fr-fr/download/details.aspx?id=2092
+-- VC10 Paquetages (Visual Studio 2010 SP1)
+http://www.microsoft.com/fr-fr/download/details.aspx?id=8328
+http://www.microsoft.com/fr-fr/download/details.aspx?id=13523
+-- VC11 Paquetages (Visual Studio 2012 Update 4)
+Les deux fichiers VSU4\vcredist_x86.exe et VSU4\vcredist_x64.exe à télécharger sont sur la même page : http://www.microsoft.com/fr-fr/download/details.aspx?id=30679
+-- VC13 Paquetages Update 5(Visual Studio 2013)
+Les deux fichiers VSU4\vcredist_x86.exe et VSU4\vcredist_x64.exe à télécharger sont sur la même page :https://support.microsoft.com/en-us/help/4032938/
+-- VC14 Paquetages (Visual Studio 2015 Update 3)Remplacé par VC15
+-- VC15 Paquetages (VisualStudio 2017)Remplacé par VC16
+-- VC16 Paquetages (VisualStudio 2015-2019) Remplacé par VC17
+-- VC17 Paquetages (VisualStudio 2015-2022)
+Visual C++ Redistributable Packages for Visual Studio 2015-2019 x86
+https://aka.ms/vs/17/release/VC_redist.x86.exe
+Visual C++ Redistributable Packages for Visual Studio 2015-2019 x64
+https://aka.ms/vs/17/release/VC_redist.x64.exe
+VC 2015-2022 (VC17) est rétrocompatible avec VC 2015 (VC14), VC 2017 (VC15) et VC 2019 (VC16). Cela signifie qu'un module VC14, VC15 ou VC16 peut être utilisé avec les binaires VC17. De par cette compatibilité, le numéro de version de Redistributable est 14.3x.xx et après l'installation, les paquetages Redistribuable VC2015 (VC14), VC2017 (VC15) et VC2019 (VC16) sont éventuellement supprimés mais vous pourrez toujours utiliser VC14, VC15 et VC16.
+
+<p>Si vous avez un Windows en 64 bits, il faut installer les deux versions 32 et 64bits de chaque paquetage VC, même si vous n'utilisez que Wampserver 32 bits.</p>
+<p>Pour vérifier que tous les paquetages VC++ sont bien installés et avec les dernières versions,
+ utilisez l'outil : http://wampserver.aviatechno.net/files/tools/check_vcredist.exe
+  et vous trouverez tous les paquetages sur http://wampserver.aviatechno.net/ dans la section Visual C++ Redistribuable Packages</p>
+<p>N'utilisez pas une ancienne version de l'outil que vous auriez déjà téléchargé. Téléchargez toujours la dernière version juste avant de l'utiliser.</p>
+<p>Voir item N°20 des CONSEILS DE DÉPANNAGE de Wampserver : http://forum.wampserver.com/read.php?1,88043</p>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
